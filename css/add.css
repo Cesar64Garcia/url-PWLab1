@@ -1,0 +1,14 @@
+#ajxAddForm{
+    padding-top: 30px;
+}
+
+
+#submit{
+	background-color: rgba(0,76,153,0.8);
+	color: rgba(255,255,255,1);
+}
+
+#submit:hover{
+	background-color: rgba(0,76,153,1);
+	color: rgba(255,255,255,1);
+}

@@ -9,7 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/add.css">
 
 	<title>Laboratorio 1</title>
 </head>
@@ -37,47 +38,41 @@
 			</ul>
 		</div>
     </nav>
-	<section class="container section">
+	<section class="container section2">
         <div class="text-center">
-            <h1 class="align-middle title custom-title"><img class="logo" src="img/logo2.png" alt="logo">Listado</h1>
+            <h1 class="align-middle title custom-title"><img class="logo" src="img/logo2.png" alt="logo">Agregar</h1>
         </div>
-        <div id="ajxLstSeries" class="row">
-            <div id="S01-01" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season01.jpg);">
-                    <div class="lst-img-intern all-transition">
-                        <div class="text-right">
-                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-01');">
-                        </div>
+        <div id="ajxAddForm">
+            <form action="frmListSeries.html">
+                <div class="form-group">
+                    <label for="txtNombreSerie">Serie</label>
+                    <select class="form-control" id="txtNombreSerie">
+                        <option>The Flash</option>
+                        <option>Arrow</option>
+                        <option>Supergirl</option>
+                        <option>Legends of Tomorrow</option>
+                        <option>Batwoman</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="txtTemporada">Temporada</label>
+                    <input class="form-control" id="txtTemporada" type="text" placeholder="Season 02"/>
+                </div>
+                <div class="form-group">
+                    <label for="customFile">Portada</label>
+                    <div class="custom-file">
+                        <input type="file" class="custom-file-input" id="customFile" name="filename" onchange="document.getElementById('lblFile').innerHTML = this.value">
+                        <label id="lblFile" class="custom-file-label" for="customFile">Choose file</label>
                     </div>
                 </div>
-            </div>
-            <div id="S01-02" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season02.png);" onclick="deleteSerie('S01-02');">
-                    <div class="lst-img-intern all-transition">
-                        <div class="text-right">
-                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" >
-                        </div>
-                    </div>
+                <div class="form-group">
+                    <label for="txtDescripcion">Descripción</label>
+                    <textarea  class="form-control" id="txtDescripcion" placeholder="..." rows="3"></textarea>
                 </div>
-            </div>
-            <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season03.jpg);">
-                    <div class="lst-img-intern all-transition">
-                        <div class="text-right">
-                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-03');">
-                        </div>
-                    </div>
+                <div class="form-group text-right">
+                    <button id="submit" type="submit" class="btn btn-primary">Guardar</button>
                 </div>
-            </div>
-            <div id="S01-04" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season04.png);">
-                    <div class="lst-img-intern all-transition">
-                        <div class="text-right">
-                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-04');">
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </form>
         </div>
     </section>
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
