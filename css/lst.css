@@ -1,0 +1,67 @@
+.selectpicker{
+	padding-right: 10px;
+}
+
+#ajxLstFIlters{
+	padding-top: 30px;
+}
+
+#ajxLstFIlters > div{
+	width: 100px;
+}
+
+#ajxLstFIlters > div > button,
+#ajxLstFIlters > button{
+	background-color: rgba(0,76,153,0.8);
+	color: rgba(255,255,255,1);
+}
+
+#ajxLstFIlters > div > button:hover,
+#ajxLstFIlters > button:hover{
+	background-color: rgba(0,76,153,1);
+	color: rgba(255,255,255,1);
+}
+
+.special-col{
+	position: relative;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	z-index: 1;
+}
+
+.lst-img-wrapper{
+	position: relative;
+	padding-top: 133.33%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.lst-img-wrapper:hover .lst-img-intern,
+.lst-img-wrapper:hover .delete-image{
+	opacity: 1;
+	visibility: visible;
+}
+
+.lst-img-intern{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.4);
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.delete-image{
+	position: relative;
+	width: 20px;
+	height: auto;
+	margin: 15px;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+}

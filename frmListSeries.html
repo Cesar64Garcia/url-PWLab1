@@ -7,8 +7,10 @@
 	<meta name="author" content="César García">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-select.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/lst.css">
 
 	<title>Laboratorio 1</title>
 </head>
@@ -31,21 +33,78 @@
                     <a class="cool-link nav-link" href="#">Listar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="cool-link nav-link" onclick="changeStyle(2);">Agregar</a>
+                    <a class="cool-link nav-link" href="frmAdd.html">Agregar</a>
                 </li>
 			</ul>
 		</div>
-	</nav>
-	<section class="container" id="section-1">
+    </nav>
+	<section class="container section">
         <div class="text-center">
-            <h1 class="align-middle title custom-title"><img class="logo" src="img/logo2.png" alt="logo">Lista de Series</h1>
+            <h1 class="align-middle title custom-title"><img class="logo" src="img/logo2.png" alt="logo">Listado</h1>
         </div>
-        <div>
-
+        <div id="ajxLstFIlters" class="text-right">
+            <select class="selectpicker" multiple data-live-search="true" title="Serie">
+                <option>The Flash</option>
+                <option>Arrow</option>
+                <option>Supergirl</option>
+                <option>Legends of Tomorrow</option>
+                <option>Bat Woman</option>
+            </select>
+            <select class="selectpicker" multiple data-live-search="true" title="Season">
+                <option>Season 01</option>
+                <option>Season 02</option>
+                <option>Season 03</option>
+                <option>Season 04</option>
+            </select>   
+            <button class="btn bs-placeholder btn-light" type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom"><img src="img/filter.png" alt="filter" width="25px"></button>
+        </div>
+        <div id="ajxLstSeries" class="row">
+            <div id="S01-01" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season01.jpg);">
+                    <div class="lst-img-intern all-transition">
+                        <div class="text-right">
+                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-01');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="S01-02" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season02.png);" onclick="deleteSerie('S01-02');">
+                    <div class="lst-img-intern all-transition">
+                        <div class="text-right">
+                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" >
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season03.jpg);">
+                    <div class="lst-img-intern all-transition">
+                        <div class="text-right">
+                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-03');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="S01-04" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season04.png);">
+                    <div class="lst-img-intern all-transition">
+                        <div class="text-right">
+                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-04');">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
 	<script type="text/javascript" src="js/popper.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+    <script>
+    function deleteSerie(strId){
+        document.getElementById(strId).style.display = 'none';
+    }
+    </script>
 </body>
 </html>

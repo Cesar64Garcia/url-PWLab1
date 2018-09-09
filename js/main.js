@@ -28,5 +28,9 @@ $(function () {
 		validateScroll();
 	});
 
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+
 	validateScroll();
 }); 
