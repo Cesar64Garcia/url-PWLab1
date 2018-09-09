@@ -39,6 +39,7 @@
 		</div>
     </nav>
 	<section class="container section2">
+        <!-- Portadas de imagenes -->
         <div class="text-center">
             <h1 class="align-middle title custom-title"><img class="logo" src="img/logo2.png" alt="logo">Listado</h1>
         </div>
@@ -60,38 +61,274 @@
         </div>
         <div id="ajxLstSeries" class="row">
             <div id="S01-01" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season01.jpg);">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season01.jpg);" data-toggle="modal" data-target="#season01">
                     <div class="lst-img-intern all-transition">
                         <div class="text-right">
                             <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-01');">
                         </div>
+                        <div class="text-center season-title">Season 01</div>
                     </div>
                 </div>
             </div>
             <div id="S01-02" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season02.png);" onclick="deleteSerie('S01-02');">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season02.png);" data-toggle="modal" data-target="#season02">
                     <div class="lst-img-intern all-transition">
                         <div class="text-right">
-                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" >
+                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-02');">
                         </div>
+                        <div class="text-center season-title">Season 02</div>
                     </div>
                 </div>
             </div>
             <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season03.jpg);">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season03.jpg);" data-toggle="modal" data-target="#season03">
                     <div class="lst-img-intern all-transition">
                         <div class="text-right">
                             <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-03');">
                         </div>
+                        <div class="text-center season-title">Season 03</div>
                     </div>
                 </div>
             </div>
             <div id="S01-04" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
-                <div class="lst-img-wrapper" style="background-image: url(img/flash-season04.png);">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season04.png);" data-toggle="modal" data-target="#season04">
                     <div class="lst-img-intern all-transition">
                         <div class="text-right">
                             <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-04');">
                         </div>
+                        <div class="text-center season-title">Season 04</div>
+                    </div>
+                </div>
+            </div>
+            <div id="S01-05" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                <div class="lst-img-wrapper" style="background-image: url(img/flash-season05.png);" data-toggle="modal" data-target="#season05">
+                    <div class="lst-img-intern all-transition">
+                        <div class="text-right">
+                            <img src="img/delete.png" alt="delete-image" class="delete-image all-transition" onclick="deleteSerie('S01-05');">
+                        </div>
+                        <div class="text-center season-title">Season 05</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Descripciones -->
+        <div class="modal fade bd-example-modal-lg" id="season01" tabindex="-1" role="dialog" aria-labelledby="season01Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="season01Title">The Flash - Season 01</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <div class="lst-img-wrapper" style="background-image: url(img/flash-season01.jpg);">
+                                    </div>
+                                </div>
+                                <div class="special-col col-lg-9 col-md-8 col-sm-6 col-6">
+                                    <div class="form-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile" name="filename" onchange="document.getElementById('lblFile').innerHTML = this.value">
+                                            <label id="lblFile" class="custom-file-label" for="customFile">Selecciona una imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDescripcion">Descripción</label>
+                                        <textarea  class="form-control" id="txtDescripcion" placeholder="..." rows="5">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit varius platea nam aliquet at, justo mauris turpis taciti integer suscipit libero est odio elementum pretium. Interdum eros tempus scelerisque vehicula laoreet venenatis condimentum, risus ultricies montes aptent parturient proin dignissim quam, turpis enim praesent facilisi netus taciti. Justo aptent vehicula lectus metus fermentum porta luctus duis ut purus velit iaculis taciti fusce dui, orci venenatis dictum eleifend vulputate tellus penatibus phasellus morbi lobortis lacinia faucibus habitasse habitant. Nibh egestas laoreet quis senectus ac pulvinar ut felis, dui metus integer curae curabitur porta.
+                
+                                            Porttitor malesuada platea iaculis fringilla imperdiet eros purus volutpat, vitae fames dictumst est ornare aptent sapien tincidunt, aliquet posuere metus urna egestas laoreet vestibulum. Enim quis suscipit ante euismod nullam arcu felis vivamus sagittis dui conubia ut odio, pretium orci semper cras commodo vitae habitasse tristique hac per iaculis. Praesent placerat erat scelerisque egestas cursus nam convallis urna, at viverra interdum molestie accumsan parturient etiam, donec sociosqu suspendisse curae sollicitudin nisi integer.
+                
+                                            Facilisi nibh pellentesque litora elementum sollicitudin facilisis montes integer tristique tortor, cubilia venenatis potenti commodo libero at volutpat nunc dapibus leo blandit, eget felis lectus placerat rhoncus natoque congue augue consequat. Habitant feugiat tristique convallis sodales, diam eu nec leo, neque ultricies tempor. Etiam sapien nisi metus mattis vitae tellus montes velit orci, parturient nullam duis fermentum nibh senectus proin litora iaculis, natoque pretium sollicitudin dictum non ligula suscipit varius.
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="special-btn btn btn-primary" data-dismiss="modal">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" id="season02" tabindex="-1" role="dialog" aria-labelledby="season02Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="season02Title">The Flash - Season 02</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <div class="lst-img-wrapper" style="background-image: url(img/flash-season02.png);">
+                                    </div>
+                                </div>
+                                <div class="special-col col-lg-9 col-md-8 col-sm-6 col-6">
+                                    <div class="form-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile" name="filename" onchange="document.getElementById('lblFile').innerHTML = this.value">
+                                            <label id="lblFile" class="custom-file-label" for="customFile">Selecciona una imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDescripcion">Descripción</label>
+                                        <textarea  class="form-control" id="txtDescripcion" placeholder="..." rows="5">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit varius platea nam aliquet at, justo mauris turpis taciti integer suscipit libero est odio elementum pretium. Interdum eros tempus scelerisque vehicula laoreet venenatis condimentum, risus ultricies montes aptent parturient proin dignissim quam, turpis enim praesent facilisi netus taciti. Justo aptent vehicula lectus metus fermentum porta luctus duis ut purus velit iaculis taciti fusce dui, orci venenatis dictum eleifend vulputate tellus penatibus phasellus morbi lobortis lacinia faucibus habitasse habitant. Nibh egestas laoreet quis senectus ac pulvinar ut felis, dui metus integer curae curabitur porta.
+                
+                                            Porttitor malesuada platea iaculis fringilla imperdiet eros purus volutpat, vitae fames dictumst est ornare aptent sapien tincidunt, aliquet posuere metus urna egestas laoreet vestibulum. Enim quis suscipit ante euismod nullam arcu felis vivamus sagittis dui conubia ut odio, pretium orci semper cras commodo vitae habitasse tristique hac per iaculis. Praesent placerat erat scelerisque egestas cursus nam convallis urna, at viverra interdum molestie accumsan parturient etiam, donec sociosqu suspendisse curae sollicitudin nisi integer.
+                
+                                            Facilisi nibh pellentesque litora elementum sollicitudin facilisis montes integer tristique tortor, cubilia venenatis potenti commodo libero at volutpat nunc dapibus leo blandit, eget felis lectus placerat rhoncus natoque congue augue consequat. Habitant feugiat tristique convallis sodales, diam eu nec leo, neque ultricies tempor. Etiam sapien nisi metus mattis vitae tellus montes velit orci, parturient nullam duis fermentum nibh senectus proin litora iaculis, natoque pretium sollicitudin dictum non ligula suscipit varius.
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="special-btn btn btn-primary" data-dismiss="modal">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" id="season03" tabindex="-1" role="dialog" aria-labelledby="season03Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="season03Title">The Flash - Season 03</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <div class="lst-img-wrapper" style="background-image: url(img/flash-season03.jpg);">
+                                    </div>
+                                </div>
+                                <div class="special-col col-lg-9 col-md-8 col-sm-6 col-6">
+                                    <div class="form-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile" name="filename" onchange="document.getElementById('lblFile').innerHTML = this.value">
+                                            <label id="lblFile" class="custom-file-label" for="customFile">Selecciona una imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDescripcion">Descripción</label>
+                                        <textarea  class="form-control" id="txtDescripcion" placeholder="..." rows="5">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit varius platea nam aliquet at, justo mauris turpis taciti integer suscipit libero est odio elementum pretium. Interdum eros tempus scelerisque vehicula laoreet venenatis condimentum, risus ultricies montes aptent parturient proin dignissim quam, turpis enim praesent facilisi netus taciti. Justo aptent vehicula lectus metus fermentum porta luctus duis ut purus velit iaculis taciti fusce dui, orci venenatis dictum eleifend vulputate tellus penatibus phasellus morbi lobortis lacinia faucibus habitasse habitant. Nibh egestas laoreet quis senectus ac pulvinar ut felis, dui metus integer curae curabitur porta.
+                
+                                            Porttitor malesuada platea iaculis fringilla imperdiet eros purus volutpat, vitae fames dictumst est ornare aptent sapien tincidunt, aliquet posuere metus urna egestas laoreet vestibulum. Enim quis suscipit ante euismod nullam arcu felis vivamus sagittis dui conubia ut odio, pretium orci semper cras commodo vitae habitasse tristique hac per iaculis. Praesent placerat erat scelerisque egestas cursus nam convallis urna, at viverra interdum molestie accumsan parturient etiam, donec sociosqu suspendisse curae sollicitudin nisi integer.
+                
+                                            Facilisi nibh pellentesque litora elementum sollicitudin facilisis montes integer tristique tortor, cubilia venenatis potenti commodo libero at volutpat nunc dapibus leo blandit, eget felis lectus placerat rhoncus natoque congue augue consequat. Habitant feugiat tristique convallis sodales, diam eu nec leo, neque ultricies tempor. Etiam sapien nisi metus mattis vitae tellus montes velit orci, parturient nullam duis fermentum nibh senectus proin litora iaculis, natoque pretium sollicitudin dictum non ligula suscipit varius.
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="special-btn btn btn-primary" data-dismiss="modal">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" id="season04" tabindex="-1" role="dialog" aria-labelledby="season04Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="season04Title">The Flash - Season 04</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <div class="lst-img-wrapper" style="background-image: url(img/flash-season04.png);">
+                                    </div>
+                                </div>
+                                <div class="special-col col-lg-9 col-md-8 col-sm-6 col-6">
+                                    <div class="form-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile" name="filename" onchange="document.getElementById('lblFile').innerHTML = this.value">
+                                            <label id="lblFile" class="custom-file-label" for="customFile">Selecciona una imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDescripcion">Descripción</label>
+                                        <textarea  class="form-control" id="txtDescripcion" placeholder="..." rows="5">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit varius platea nam aliquet at, justo mauris turpis taciti integer suscipit libero est odio elementum pretium. Interdum eros tempus scelerisque vehicula laoreet venenatis condimentum, risus ultricies montes aptent parturient proin dignissim quam, turpis enim praesent facilisi netus taciti. Justo aptent vehicula lectus metus fermentum porta luctus duis ut purus velit iaculis taciti fusce dui, orci venenatis dictum eleifend vulputate tellus penatibus phasellus morbi lobortis lacinia faucibus habitasse habitant. Nibh egestas laoreet quis senectus ac pulvinar ut felis, dui metus integer curae curabitur porta.
+                
+                                            Porttitor malesuada platea iaculis fringilla imperdiet eros purus volutpat, vitae fames dictumst est ornare aptent sapien tincidunt, aliquet posuere metus urna egestas laoreet vestibulum. Enim quis suscipit ante euismod nullam arcu felis vivamus sagittis dui conubia ut odio, pretium orci semper cras commodo vitae habitasse tristique hac per iaculis. Praesent placerat erat scelerisque egestas cursus nam convallis urna, at viverra interdum molestie accumsan parturient etiam, donec sociosqu suspendisse curae sollicitudin nisi integer.
+                
+                                            Facilisi nibh pellentesque litora elementum sollicitudin facilisis montes integer tristique tortor, cubilia venenatis potenti commodo libero at volutpat nunc dapibus leo blandit, eget felis lectus placerat rhoncus natoque congue augue consequat. Habitant feugiat tristique convallis sodales, diam eu nec leo, neque ultricies tempor. Etiam sapien nisi metus mattis vitae tellus montes velit orci, parturient nullam duis fermentum nibh senectus proin litora iaculis, natoque pretium sollicitudin dictum non ligula suscipit varius.
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="special-btn btn btn-primary" data-dismiss="modal">Actualizar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" id="season05" tabindex="-1" role="dialog" aria-labelledby="season05Title" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="season05Title">The Flash - Season 05</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <div class="row">
+                                <div id="S01-03" class="special-col col-lg-3 col-md-4 col-sm-6 col-6">
+                                    <div class="lst-img-wrapper" style="background-image: url(img/flash-season05.png);">
+                                    </div>
+                                </div>
+                                <div class="special-col col-lg-9 col-md-8 col-sm-6 col-6">
+                                    <div class="form-group">
+                                            <div class="custom-file">
+                                            <input type="file" class="custom-file-input" id="customFile" name="filename" onchange="document.getElementById('lblFile').innerHTML = this.value">
+                                            <label id="lblFile" class="custom-file-label" for="customFile">Selecciona una imagen</label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="txtDescripcion">Descripción</label>
+                                        <textarea  class="form-control" id="txtDescripcion" placeholder="..." rows="5">
+                                            Lorem ipsum dolor sit amet consectetur adipiscing elit varius platea nam aliquet at, justo mauris turpis taciti integer suscipit libero est odio elementum pretium. Interdum eros tempus scelerisque vehicula laoreet venenatis condimentum, risus ultricies montes aptent parturient proin dignissim quam, turpis enim praesent facilisi netus taciti. Justo aptent vehicula lectus metus fermentum porta luctus duis ut purus velit iaculis taciti fusce dui, orci venenatis dictum eleifend vulputate tellus penatibus phasellus morbi lobortis lacinia faucibus habitasse habitant. Nibh egestas laoreet quis senectus ac pulvinar ut felis, dui metus integer curae curabitur porta.
+                
+                                            Porttitor malesuada platea iaculis fringilla imperdiet eros purus volutpat, vitae fames dictumst est ornare aptent sapien tincidunt, aliquet posuere metus urna egestas laoreet vestibulum. Enim quis suscipit ante euismod nullam arcu felis vivamus sagittis dui conubia ut odio, pretium orci semper cras commodo vitae habitasse tristique hac per iaculis. Praesent placerat erat scelerisque egestas cursus nam convallis urna, at viverra interdum molestie accumsan parturient etiam, donec sociosqu suspendisse curae sollicitudin nisi integer.
+                
+                                            Facilisi nibh pellentesque litora elementum sollicitudin facilisis montes integer tristique tortor, cubilia venenatis potenti commodo libero at volutpat nunc dapibus leo blandit, eget felis lectus placerat rhoncus natoque congue augue consequat. Habitant feugiat tristique convallis sodales, diam eu nec leo, neque ultricies tempor. Etiam sapien nisi metus mattis vitae tellus montes velit orci, parturient nullam duis fermentum nibh senectus proin litora iaculis, natoque pretium sollicitudin dictum non ligula suscipit varius.
+                                        </textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="special-btn btn btn-primary" data-dismiss="modal">Actualizar</button>
                     </div>
                 </div>
             </div>
